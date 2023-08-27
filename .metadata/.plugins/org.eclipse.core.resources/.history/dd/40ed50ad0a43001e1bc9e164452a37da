@@ -1,0 +1,64 @@
+package com.aurionpro.model;
+
+import java.util.Date;
+import java.util.List;
+
+public class Order {
+	
+	private int id;
+	private Date date;
+
+	 private List<LineItem>item;
+
+	public Order(int id, Date date, List<LineItem> item) {
+		super();
+		this.id = id;
+		this.date = date;
+		this.item = item;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public List<LineItem> getItem() {
+		return item;
+	}
+
+	public void setItem(List<LineItem> item) {
+		this.item = item;
+	}
+
+	 public double orderPriceList() {
+		 
+		 double price=0.0;
+		 for( LineItem each:item)
+		 {
+			 price+=each.calculateLineItemCost();
+		 }
+		 
+		return price;
+		 
+		 
+	 }
+	 
+	@Override
+	public String toString() {
+		return "\nOrder [id=" + id + ", date=" + date + ", item=" + item + "]";
+	}
+	 
+	 
+	 
+}

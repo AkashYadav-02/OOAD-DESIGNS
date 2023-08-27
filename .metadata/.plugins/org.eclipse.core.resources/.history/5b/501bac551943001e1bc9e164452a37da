@@ -1,0 +1,38 @@
+package com.aurionpro.model;
+
+public class PrintUtil {
+ 
+	
+	private int id;
+	private String name;
+	private double basic;
+	
+	public PrintUtil(int id, String name, double basic) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.basic = basic;
+	
+	}
+	
+	  
+	Employee emp= new Employee(this.id,this.name,this.basic);
+		TaxUtil tax=new TaxUtil(emp.getSalary());
+		
+		
+		public void printSalarySlip() {
+			
+			System.out.println(" Net Salary is " + emp.getSalary());
+			System.out.println("  Basic  " + emp.getBasic());
+			System.out.println(" HRA " + emp.getHra());
+			System.out.println(" TA " + emp.getTa());
+			System.out.println(" DA " + emp.getDa());
+
+			System.out.println("Annual Tax" + tax.calculateTax());
+			
+			 double sal= emp.getSalary()-(tax.calculateTax()/12);
+			 System.out.println( " salarytax  after " + sal);
+		}
+
+	
+}

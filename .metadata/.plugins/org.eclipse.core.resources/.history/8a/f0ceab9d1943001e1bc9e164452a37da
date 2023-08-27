@@ -1,0 +1,16 @@
+package com.aurionpro.test;
+
+
+
+import com.aurionpro.model.Employee;
+import com.aurionpro.model.PrintUtil;
+
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+	PrintUtil ptr=new PrintUtil(1,"akash",50000);
+	ptr.printSalarySlip();
+	}
+
+}

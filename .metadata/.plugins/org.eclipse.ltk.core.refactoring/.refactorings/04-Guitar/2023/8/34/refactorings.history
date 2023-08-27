@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;04-Guitar&apos;&#x0D;&#x0A;- Original project: &apos;04-Guitar&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.aurionpro.model.Employee.java&#x0D;&#x0A;     com.aurionpro.model.PrintUtil.java&#x0D;&#x0A;     com.aurionpro.model.TaxUtil.java" description="Delete elements" element1="/src&lt;com.aurionpro.model{Employee.java" element2="/src&lt;com.aurionpro.model{PrintUtil.java" element3="/src&lt;com.aurionpro.model{TaxUtil.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1692981544792" subPackages="false" version="1.0"/>
+</session>

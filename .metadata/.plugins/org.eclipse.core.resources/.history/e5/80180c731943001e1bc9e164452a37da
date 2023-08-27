@@ -1,0 +1,32 @@
+package com.aurionpro.model;
+
+public class TaxUtil {
+
+	private double salary;
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public TaxUtil(double salary) {
+		super();
+		this.salary = salary;
+	}
+	
+	public double calculateTax() {
+		if (this.salary * 12 > 800000.0 && this.salary * 12 < 1000000.0) {
+			return this.salary * .2;
+		}
+		if (this.salary * 12 > 500000.0 && this.salary * 12 < 800000.0) {
+			return this.salary * .1;
+		}
+		if (this.salary * 12 > 1000000.0) {
+			return this.salary * .3;
+		}
+		return this.salary;
+	}
+}

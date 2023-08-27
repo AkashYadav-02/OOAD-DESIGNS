@@ -1,0 +1,22 @@
+package com.aurionpro.test;
+
+import java.util.Iterator;
+import java.util.List;
+
+import com.aurionpro.model.Builder;
+import com.aurionpro.model.Guitar;
+import com.aurionpro.model.GuitarSpec;
+import com.aurionpro.model.Inventory;
+import com.aurionpro.model.Type;
+import com.aurionpro.model.Wood;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class FindGuitarTester {
+
+  public static void main(String[] args) {
+    // Set up Rick's guitar inventory
+  
+	  
+  }}

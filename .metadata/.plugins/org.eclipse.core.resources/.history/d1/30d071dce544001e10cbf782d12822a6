@@ -1,0 +1,30 @@
+package com.aurionpro.test;
+
+import java.util.Iterator;
+import java.util.List;
+
+import com.aurionpro.model.Builder;
+import com.aurionpro.model.Guitar;
+import com.aurionpro.model.GuitarSpec;
+import com.aurionpro.model.Inventory;
+import com.aurionpro.model.Type;
+import com.aurionpro.model.Wood;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class FindGuitarTester {
+
+  public static void main(String[] args) {
+	  Inventory inventory = new Inventory();
+	    initializeInventory(inventory);
+      System.out.println(inventory.getGuitar("11277"));
+	  
+  }
+  private static void initializeInventory(Inventory inventory) {
+	    inventory.addGuitar("11277", 3999.95, 
+	      new GuitarSpec(Builder.COLLINGS, "CJ", Type.ACOUSTIC, 6,
+	                     Wood.INDIAN_ROSEWOOD, Wood.SITKA));
+  }
+  
+}

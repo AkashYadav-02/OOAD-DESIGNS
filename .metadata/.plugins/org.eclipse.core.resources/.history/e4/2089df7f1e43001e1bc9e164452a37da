@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+public class annualtax {
+	public static double calculateAnnualTax(Employee employee) {
+		double annualSalary = employee.calculateMonthlySalary();
+		double annualTax = 0.0;
+		if (annualSalary > 500000 && annualSalary <= 800000) {
+			annualTax = annualSalary * 0.10;
+		} else if (annualSalary > 800000 && annualSalary <= 1000000) {
+			annualTax = annualSalary * 0.20;
+		} else if (annualSalary > 1000000) {
+			annualTax = annualSalary * 0.30;
+		}
+		return annualTax;
+	}
+}

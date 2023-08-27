@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class OthersInterest implements IFestivalInterest {
+
+	@Override
+	public double getInterest() {
+		// TODO Auto-generated method stub
+		return 6.5;
+	}
+
+}
