@@ -9,7 +9,7 @@ public class Inventory {
 	  private List guitars;
 
 	  public Inventory() {
-	    guitars = new LinkedList();
+	    guitars = new ArrayList();
 	  }
 
 	  public void addGuitar(String serialNumber, double price,

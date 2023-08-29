@@ -6,7 +6,6 @@ public class Guitar {
 	private double price;
 	private GuitarSpec specs;
 
-	
 
 	public Guitar(String serialNumber, double price, GuitarSpec specs) {
 		
@@ -33,6 +32,10 @@ public class Guitar {
 		return price;
 	}
 
+	public GuitarSpec getSpecs() {
+		return specs;
+	}
+
 
 
 	@Override
@@ -41,10 +44,6 @@ public class Guitar {
 	}
 
 
-
-	public GuitarSpec getSpecs() {
-		return specs;
-	}
 
 	
 
